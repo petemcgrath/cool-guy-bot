@@ -42,7 +42,7 @@ becomes
 
 Save the file.
 
-#@ Add your changes to heroku
+## Add your changes to heroku
 
     $ git add .
     $ git commit -m"Added the real bot id to the project"
