@@ -2,18 +2,18 @@
 
 Posts an ascii face to a group whenever someone types "/cool guy"
 
-# Deploy to Heroku:
+## Deploy to Heroku:
 
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
-# Get the Code:
+## Get the Code:
 
 Once your heroku app has been created, be sure to clone the repo to your local machine:
 
-  $ heroku git:clone -a <YOUR HEROKU APP NAME HERE>
+    $ heroku git:clone -a <YOUR HEROKU APP NAME HERE>
 
 
-# Create a GroupMe Bot:
+## Create a GroupMe Bot:
 
 Go to:
 https://dev.groupme.com/bots/new
@@ -21,7 +21,7 @@ https://dev.groupme.com/bots/new
 Fill out the form to create your new bot. Hint: The callback url should be the url of your heroku app.
 
 
-# Add your new bot id to the project:
+## Add your new bot id to the project:
 
 Go here to view all of your bots:
 https://dev.groupme.com/bots
@@ -33,22 +33,22 @@ Find where it says <Your Bot ID here> and replace it with the ID of your new bot
 
 If your Bot ID is 12345678910, then:
 
-  var botID = "<Your Bot ID here>";
+    var botID = "<Your Bot ID here>";
 
 becomes
 
-  var botID = "12345678910";
+    var botID = "12345678910";
 
 
 Save the file.
 
-# Add your changes to heroku
+#@ Add your changes to heroku
 
-  $ git add .
-  $ git commit -m"Added the real bot id to the project"
-  $ git push heroku master
+    $ git add .
+    $ git commit -m"Added the real bot id to the project"
+    $ git push heroku master
 
 
-# All done.
+## All done.
 
 Go to GroupMe and type "/cool guy" in the group where your bot lives to see it in action.
