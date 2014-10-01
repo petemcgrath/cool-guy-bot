@@ -10,7 +10,7 @@ Posts an ascii face to a group whenever someone types "/cool guy"
 
 Once your heroku app has been created, be sure to clone the repo to your local machine:
 
-    $ heroku git:clone -a <YOUR HEROKU APP NAME HERE>
+    $ heroku git:clone -a YOUR HEROKU APP NAME HERE
 
 
 ## Create a GroupMe Bot:
@@ -28,16 +28,21 @@ https://dev.groupme.com/bots
 
 Find the one you just created and copy it's ID.
 
-Now open the file bot.js from your local files in your text editor of choice.
-Find where it says <Your Bot ID here> and replace it with the ID of your new bot.
+In your terminal, fire this command to set the Bot ID environment variable in heroku:
+
+    heroku config:set BOT_ID="YOUR BOT ID HERE"
+
+To run your app locally, you will also need to set the local Bot ID environment variable.
+To do so, open the file `.env` from your local files in your text editor of choice.
+Find where it says, "YOUR BOT ID HERE" and replace it with the ID of your new bot.
 
 If your Bot ID is 12345678910, then:
 
-    var botID = "<Your Bot ID here>";
+    BOT_ID="YOUR BOT ID HERE"
 
 becomes
 
-    var botID = "12345678910";
+    BOT_ID="12345678910"
 
 
 Save the file.
