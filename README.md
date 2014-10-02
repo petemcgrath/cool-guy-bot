@@ -45,7 +45,7 @@ Fill out the form to create your new bot:
 
 ![Create your new bot](http://i.groupme.com/567x373.png.242d18352d7742858cf9a263f597c5d9)
 
-## Add your new bot id to the project:
+## Find your Bot ID:
 
 Go here to view all of your bots:
 https://dev.groupme.com/bots
@@ -58,9 +58,10 @@ On your Bot's page, copy the Bot Token (aka your Bot ID)
 
 ![Copy your Bot ID](http://i.groupme.com/685x371.png.215bafa0a50c4b868df7c3003fd7ffc0)
 
-Now go back to heroku to add your Bot ID as an environment variable within your app.
+## Add your Bot ID to your Heroku app:
 
 Go here to see all of your Heroku apps and select the one you just created before:
+
 https://dashboard-next.heroku.com/apps
 
 ![Select your heroku app](http://i.groupme.com/920x722.png.46154d6b95f249539c594b129ddb7732)
@@ -83,7 +84,7 @@ Fill out the form to add an environment variable to you app:
   * In the "value" field paste your Bot ID that you copied in the previous steps
   * Click the save button
 
-![Add the Bot ID environment variable](http://i.groupme.com/796x212.png.b8979454fc4742c7bae688ac67262755)
+![Add the Bot ID environment variable](http://i.groupme.com/790x167.png.8696884639c6406b859fbb90693760c2)
 
 ## All done. Now go test your bot!
 
