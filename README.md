@@ -78,7 +78,7 @@ Then click edit:
 
 ![Edit your environment variables](http://i.groupme.com/796x212.png.b8979454fc4742c7bae688ac67262755)
 
-Fill out the form to add an environment variable to you app:
+Fill out the form to add an environment variable to your app:
 
   * In the "key" field type: BOT_ID
   * In the "value" field paste your Bot ID that you copied in the previous steps
