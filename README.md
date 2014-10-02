@@ -45,7 +45,7 @@ Fill out the form to create your new bot:
   * Select the group where you want the bot to live
   * Give your bot a name
   * Paste in the url to your newly deply heroku app
-    * http://your-app-name-here.herokuapp.com/
+    * `http://your-app-name-here.herokuapp.com/`
   * (Optional) Give your bot an avatar by providing a url to an image
 
 
