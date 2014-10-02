@@ -15,7 +15,7 @@ Be sure to log into heroku, using your heroku credentials, then click the link b
 
 You should be taken to a page that looks like this:
 
-![Deploy to Heroku](https://i.groupme.com/837x662.png.36c63698644a4f61a9ff3d5af91caa5e)
+![Deploy to Heroku](http://i.groupme.com/837x662.png.36c63698644a4f61a9ff3d5af91caa5e)
 
 Optionally, you can give your app a name, or instead leave
 it blank and let Heroku name it for you (you can change it later).
@@ -32,13 +32,7 @@ Use your GroupMe credentials to log into the developer site.
 
 ![Log into dev.groupme.com](https://i.groupme.com/640x292.png.38c9e590383149c1a01424fc61cdce4e)
 
-Once you have successfully logged in, you should
-be taken to the Create Bot Form page.
-
-If not, click this link again:
-https://dev.groupme.com/bots/new
-
-![Create your new bot](https://i.groupme.com/984x490.png.abeab911cb084ed4bb3d59802acebeb0.large)
+Once you have successfully logged in, go to https://dev.groupme.com/bots/new
 
 Fill out the form to create your new bot:
 
@@ -47,51 +41,52 @@ Fill out the form to create your new bot:
   * Paste in the url to your newly deply heroku app
     * `http://your-app-name-here.herokuapp.com/`
   * (Optional) Give your bot an avatar by providing a url to an image
+  * Click submit
 
-
-
+![Create your new bot](http://i.groupme.com/567x373.png.242d18352d7742858cf9a263f597c5d9)
 
 ## Add your new bot id to the project:
 
 Go here to view all of your bots:
 https://dev.groupme.com/bots
 
-Find the one you just created and copy it's ID.
+Click on the one you just created.
 
-In your terminal, fire this command to set the Bot ID environment variable in heroku:
+![Select your new bot](http://i.groupme.com/1174x422.png.a911e2a2feab491783c7821b58100f16)
 
-    heroku config:set BOT_ID="YOUR BOT ID HERE"
+On your Bot's page, copy the Bot Token (aka your Bot ID)
 
+![Copy your Bot ID](http://i.groupme.com/685x371.png.215bafa0a50c4b868df7c3003fd7ffc0)
 
-## All done.
+Now go back to heroku to add your Bot ID as an environment variable within your app.
+
+Go here to see all of your Heroku apps and select the one you just created before:
+https://dashboard-next.heroku.com/apps
+
+![Select your heroku app](http://i.groupme.com/920x722.png.46154d6b95f249539c594b129ddb7732)
+
+On your app page, click settings in the top navigation:
+
+![Go to your app's settings](http://i.groupme.com/722x127.png.27c0a2e83c524064bd41bb66df76d14c)
+
+On your app's setting page, find the Config Vars section and click the Reveal Config Vars button:
+
+![Reveal your environment variables](http://i.groupme.com/606x181.png.94d5157963bc419886e98e038e3195c3)
+
+Then click edit:
+
+![Edit your environment variables](http://i.groupme.com/796x212.png.b8979454fc4742c7bae688ac67262755)
+
+Fill out the form to add an environment variable to you app:
+
+  * In the "key" field type: BOT_ID
+  * In the "value" field paste your Bot ID that you copied in the previous steps
+  * Click the save button
+
+![Add the Bot ID environment variable](http://i.groupme.com/796x212.png.b8979454fc4742c7bae688ac67262755)
+
+## All done. Now go test your bot!
 
 Go to GroupMe and type "/cool guy" in the group where your bot lives to see it in action.
 
-# Next steps
-
-## Get the Code:
-
-Once your heroku app has been created, be sure to clone the repo to your local machine:
-
-    $ heroku git:clone -a YOUR HEROKU APP NAME HERE
-
-To run your app locally, you will also need to set the local Bot ID environment variable.
-To do so, open the file `.env` from your local files in your text editor of choice.
-Find where it says, "YOUR BOT ID HERE" and replace it with the ID of your new bot.
-
-If your Bot ID is 12345678910, then:
-
-    BOT_ID="YOUR BOT ID HERE"
-
-becomes
-
-    BOT_ID="12345678910"
-
-
-Save the file.
-
-## Add your changes to heroku
-
-    $ git add .
-    $ git commit -m"Added the real bot id to the project"
-    $ git push heroku master
+![Test your Bot](http://i.groupme.com/821x587.png.7bcf55bed1c64acab83fa2c2ad0b0862)
