@@ -34,6 +34,8 @@ Use your GroupMe credentials to log into the developer site.
 
 Once you have successfully logged in, go to https://dev.groupme.com/bots/new
 
+![Create your new bot](http://i.groupme.com/567x373.png.242d18352d7742858cf9a263f597c5d9)
+
 Fill out the form to create your new bot:
 
   * Select the group where you want the bot to live
@@ -42,8 +44,6 @@ Fill out the form to create your new bot:
     * `http://your-app-name-here.herokuapp.com/`
   * (Optional) Give your bot an avatar by providing a url to an image
   * Click submit
-
-![Create your new bot](http://i.groupme.com/567x373.png.242d18352d7742858cf9a263f597c5d9)
 
 ## Find your Bot ID:
 
