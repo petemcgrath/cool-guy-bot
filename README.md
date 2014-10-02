@@ -20,25 +20,35 @@ You should be taken to a page that looks like this:
 Optionally, you can give your app a name, or instead leave
 it blank and let Heroku name it for you (you can change it later).
 
-Click "Deploy for free"
-
 ![Success](https://i.groupme.com/959x932.png.85e7959a8a9a41c6b20f5f6b50aceecb)
+
 
 ## Next, create a GroupMe Bot:
 
 Go to:
-https://dev.groupme.com/bots/new
+https://dev.groupme.com/session/new
 
-If you are not already logged in, you will see a login screen.
 Use your GroupMe credentials to log into the developer site.
 
 ![Log into dev.groupme.com](https://i.groupme.com/640x292.png.38c9e590383149c1a01424fc61cdce4e)
 
-Hit the log in button and you should be taken to the Create Bot Form page.
+Once you have successfully logged in, you should
+be taken to the Create Bot Form page.
+
 If not, click this link again:
 https://dev.groupme.com/bots/new
 
-Fill out the form to create your new bot. Hint: The callback url should be the url of your heroku app.
+![Create your new bot](https://i.groupme.com/984x490.png.abeab911cb084ed4bb3d59802acebeb0.large)
+
+Fill out the form to create your new bot:
+
+  * Select the group where you want the bot to live
+  * Give your bot a name
+  * Paste in the url to your newly deply heroku app
+    * http://your-app-name-here.herokuapp.com/
+  * (Optional) Give your bot an avatar by providing a url to an image
+
+
 
 
 ## Add your new bot id to the project:
