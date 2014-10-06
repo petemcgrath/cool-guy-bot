@@ -1,11 +1,25 @@
-# GroupMe Cool Guy Node Bot
+# Sample GroupMe NodeJS Callback Bot
 
-Posts an ascii face to a group whenever someone types "/cool guy"
+## Introduction
+
+This project shows the capabilty of a bot to react to messages sent within a group.
+
+## Contents
+
+  * Quickly get our sample bot up and running in your groups
+    * Deploy the code to heroku
+    * Create a bot
+    * Configure to your bot's credentials
+  * [Make changes to the bot](#pull)
+    * Pull the code down to your local machine
+    * Configure the local environment variables to your bot's credentials
 
 ## Requirements:
 
   * GroupMe account
   * Heroku account
+
+# Get your bot up and running
 
 ## Deploy to Heroku:
 
@@ -91,3 +105,6 @@ Fill out the form to add an environment variable to your app:
 Go to GroupMe and type "/cool guy" in the group where your bot lives to see it in action.
 
 ![Test your Bot](http://i.groupme.com/821x587.png.7bcf55bed1c64acab83fa2c2ad0b0862)
+
+# Make it your own<a name="pull"></a>
+
