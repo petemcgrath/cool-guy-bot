@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This project shows the capabilty of a bot to react to messages sent within a group.
+This project shows the capability of a bot to react to messages sent within a group.
 
 ## Contents
 
@@ -18,6 +18,7 @@ This project shows the capabilty of a bot to react to messages sent within a gro
 
   * GroupMe account
   * Heroku account
+  * [Heroku Toolbelt](https://toolbelt.heroku.com/)
 
 # Get your bot up and running<a name="deploy"></a>
 
@@ -118,10 +119,11 @@ And then change directory into the new folder
 
     $ cd YOUR_APP_NAME_HERE
 
-## Configure your BOT_ID environment variable
+## Configure your local BOT_ID environment variable
 
 Open the file `.env` from your local files in your text editor of choice.
 Find where it says "YOUR_BOT_ID_HERE" and replace it with the ID of your new bot.
+
 If you don't know what your Bot ID is, please refer back to [this](#get-bot-id) section,
 where it is explained how to retrieve it.
 
@@ -129,7 +131,7 @@ If your Bot ID is 12345678910, then:
 
     BOT_ID="YOUR_BOT_ID_HERE"
 
-becomes
+becomes:
 
     BOT_ID="12345678910"
 
@@ -140,6 +142,8 @@ To test your bot locally, open terminal and run the following command to start a
     $ foreman start
 
 Then navigate to `http://127.0.0.1:5000/` in a browser.
+
+![Local bot](http://i.groupme.com/502x133.png.f06c630467954f5dab4c742dc67b71bf)
 
 ## All done! Go play around and make the bot your own.
 
